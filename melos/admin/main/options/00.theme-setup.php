@@ -6,7 +6,7 @@
  */
 
 /* ----------------------------------------------------------------------------------
-	BACKWARD COMPATIBILITY FOR WORDPRESS CORE FUNCTIONS
+	BACKWARD COMPATIBILITY FOR CORE FUNCTIONS
 ---------------------------------------------------------------------------------- */
 
 if ( ! function_exists( 'wp_body_open' ) ) {
@@ -57,7 +57,7 @@ function thinkup_theme_register_required_plugins() {
 		'parent_slug'  => 'themes.php',            // Parent menu slug.
 		'capability'   => 'edit_theme_options',    // Capability needed to view plugin install page, should be a capability associated with the parent menu used.
 		'has_notices'  => true,                    // Show admin notices or not.
-		'dismissable'  => false,                   // If false, a user cannot dismiss the nag message.
+		'dismissable'  => true,                    // If false, a user cannot dismiss the nag message.
 		'dismiss_msg'  => '',                      // If 'dismissable' is false, this message will be output at top of nag.
 		'is_automatic' => false,                   // Automatically activate plugins after installation or not.
 		'message'      => '',                      // Message to output right before the plugins table.
