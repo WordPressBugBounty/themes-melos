@@ -40,7 +40,10 @@ h1 {
 	background: #f0f0f1;
 }
 
-/* Hide defauly dismiss button */
+/* Hide default dismiss button */
+.thinkup-toolbox-about {
+	background: #fff !important;
+}
 .thinkup-toolbox-about a.notice-dismiss {
 	padding: 10px !important;
 	text-decoration: none !important;
